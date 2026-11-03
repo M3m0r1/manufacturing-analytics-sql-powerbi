@@ -1,0 +1,53 @@
+OK   plan_id без дублів
+OK   work_order_id без дублів
+OK   batch_id без дублів
+OK   unit_id без дублів
+OK   test_id без дублів
+OK   inspection_id без дублів
+OK   downtime_id без дублів
+OK   cost_id без дублів
+OK   plan: дата є в календарі
+OK   plan: лінія є в довіднику
+OK   plan: продукт є в довіднику
+OK   orders: plan_id є в плані
+OK   batches: замовлення існує
+OK   batches: зміна існує
+OK   units: партія існує
+OK   tests: виріб існує
+OK   tests: дата є в календарі
+OK   tests: дефект існує
+OK   insp: виріб існує
+OK   insp: етап існує
+OK   insp: дефект існує
+OK   downtime: дата є в календарі
+OK   downtime: лінія існує
+OK   downtime: зміна існує
+OK   downtime: причина існує
+OK   costs: дата є в календарі
+OK   costs: лінія існує
+OK   costs: продукт існує
+OK   Good + Rejected = усі вироби
+OK   Good: етапу списання немає
+OK   Rejected: етап списання є
+OK   Максимум 3 спроби
+OK   Немає двох однакових спроб одного виробу
+OK   Тестувалися саме ті вироби, що дійшли до етапу 5
+OK   У Good остання спроба = Pass
+OK   Списані на етапі 5: усі спроби Fail
+OK   Інспекції: один виріб = один рядок
+OK   Fail-інспекції лише в Rejected
+OK   Reworked-інспекції лише в Good
+OK   Простої: тривалість більше 0
+OK   Витрати: усі суми більше 0
+OK   Витрати: запущено = кількість виробів
+OK   Planned Units: 164684 (очікувано 164684)
+OK   Units: 165885 (очікувано 165885)
+OK   Good: 153881 (очікувано 153881)
+OK   Rejected: 12004 (очікувано 12004)
+OK   Tested units: 158026 (очікувано 158026)
+OK   Test attempts: 177558 (очікувано 177558)
+OK   Inspections: 12608 (очікувано 12608)
+OK   Downtime events: 1428 (очікувано 1428)
+OK   Cost rows: 1099 (очікувано 1099)
+
+Total: 51 | Failed: 0
