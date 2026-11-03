@@ -68,6 +68,10 @@ downtime_records, production_costs  (залежать лише від довід
 | Витрати на придатний виріб | 726.69 грн |
 | Збитки від браку (лише матеріали) | 4 128 816 грн |
 
+![Overview](./docs/images/overview.png)
+![Line Efficiency](./docs/images/line_efficiency.png)
+![Quality Cost](./docs/images/quality_cost.png)
+
 Деталі й рекомендації винесено в окремий документ «Бізнес-рекомендації».
 
 ## Структура репозиторію
