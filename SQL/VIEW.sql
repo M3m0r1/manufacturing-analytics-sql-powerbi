@@ -1,4 +1,4 @@
-USE Ajax_Mfg_Analytics;                                  
+USE Mfg_Analytics;
 GO                                                       
 
 CREATE VIEW vw_units_enriched AS                         

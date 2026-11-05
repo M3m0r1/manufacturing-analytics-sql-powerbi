@@ -2,8 +2,6 @@
 
 Навчальний pet project для портфоліо: наскрізна аналітика виробництва електронних пристроїв безпеки.
 
-> **Важливо.** Усі дані в цьому проєкті **синтетичні**, згенеровані Python-скриптами. Проєкт **не є внутрішнім рішенням Ajax Systems** і не описує її реальний виробничий процес. Назви продуктів, етапів, ставок і нормативів умовні. Використано лише публічні категорії продукції (датчики руху й відкриття, центральний блок керування, пожежний датчик).
-
 ## Мета
 
 Автоматизувати виробничу звітність і відповісти на питання керівництва:
@@ -77,7 +75,7 @@ downtime_records, production_costs  (залежать лише від довід
 ## Структура репозиторію
 
 ```
-ajax_mfg_analytics/
+mfg_analytics/
 ├── data/raw/                 CSV, створені скриптами
 ├── src/
 │   ├── config.py             seed, період, шляхи
@@ -98,7 +96,7 @@ ajax_mfg_analytics/
 ├── docs/
 │   ├── kpi_catalog.md        каталог KPI
 │   └── validation_report.txt звіт валідації
-├── powerbi/ajax_mfg_analytics.pbix
+├── powerbi/mfg_analytics.pbix
 └── requirements.txt
 ```
 
@@ -135,14 +133,14 @@ python validate_data.py
 
 ### 3. База даних
 
-1. У SSMS створіть базу `Ajax_Mfg_Analytics`.
+1. У SSMS створіть базу `Mfg_Analytics`.
 2. Виконайте `sql/01_create_tables.sql`, потім `sql/02_views.sql`.
 3. У `src/load_to_sql.py` вкажіть ім'я свого сервера (рядок `SERVER=...`).
 4. Запустіть `python load_to_sql.py`. Скрипт спершу очищає таблиці, потім завантажує CSV й порівнює кількість рядків із SQL.
 
 ### 4. Power BI
 
-Відкрийте `powerbi/ajax_mfg_analytics.pbix`, у **Transform data → Data source settings** змініть сервер на свій і натисніть **Refresh**.
+Відкрийте `powerbi/mfg_analytics.pbix`, у **Transform data → Data source settings** змініть сервер на свій і натисніть **Refresh**.
 
 ## Перевірки якості
 

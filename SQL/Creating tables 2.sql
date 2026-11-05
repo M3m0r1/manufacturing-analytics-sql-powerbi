@@ -1,4 +1,4 @@
-USE Ajax_Mfg_Analytics;
+USE Mfg_Analytics;
 GO
 
 -- production_plan: план. 1 рядок = день x лінія x продукт

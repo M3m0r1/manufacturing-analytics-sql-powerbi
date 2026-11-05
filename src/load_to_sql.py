@@ -1,15 +1,18 @@
 import pandas as pd
 import pyodbc
 from config import RAW_DIR
+import os
 
+SERVER = os.getenv("SQL_SERVER", "localhost")
+print("Сервер:", SERVER)
 # ---------------------------------------------------------
 # 1. Підключення до SQL Server
 # ---------------------------------------------------------
 conn_str = (
     "DRIVER={ODBC Driver 18 for SQL Server};"
-    "SERVER={SERVER};"
-    "DATABASE=Ajax_Mfg_Analytics;"
-    "Trusted_Connection=yes;"          # вхід через Windows, пароль не потрібен
+    f"SERVER={SERVER};"
+    "DATABASE=Mfg_Analytics;"
+    "Trusted_Connection=yes;"
     "TrustServerCertificate=yes;"
 )
 conn = pyodbc.connect(conn_str)

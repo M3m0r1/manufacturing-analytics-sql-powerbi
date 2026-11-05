@@ -1,5 +1,5 @@
 -- Контрольні суми: порівнюємо з числами зі скриптів Python
-USE Ajax_Mfg_Analytics;
+USE Mfg_Analytics;
 GO
 
 SELECT 

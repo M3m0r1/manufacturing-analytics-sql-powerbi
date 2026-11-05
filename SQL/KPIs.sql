@@ -1,4 +1,4 @@
-USE [Ajax_Mfg_Analytics]
+USE [Mfg_Analytics]
 GO
 -- 1.1 Rejection rate per line
 SELECT
